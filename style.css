@@ -1,21 +1,43 @@
-/* This is a CSS (Cascading Style Sheet) file */
-
-/* This is what a CSS comment looks like. */
-
-/* A CSS file is filled with CSS rules.
-Each rule has two main parts, (1) the selector (2) the declaration block.
-The selector says what to style, the declaration block says how to style it. 
-*/
-
-/* This is our first rule. The selector in this rule is just "body".
-This says we want to apply the following style within the curly braces { }
-to the whole of the HTML <body> element. */
 body {
-  font-size: 100%;       /* this can be used to change the font size */
-  font-family: "Arial";  /* change the font on the page */
+ font-size: 100%;
+ font-family: "Arial";
 }
 
-/* The selector here is "h1", this will apply to all <h1> HTML elements. */
+
+#title-bar {
+  text-align: center;
+  font-size: 40px;
+  background-color: green;
+  color: white;
+  font-weight: bolder;
+}
+
+#navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+  display: block;
+}
+
+#navbar li {
+  float: left;
+}
+
+#navbar li a {
+  display: block;
+  color: grey;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#navbar li a:hover {
+  background-color: darkgrey;
+}
+
 h1 {
   text-align: center;
   background-color: green;
@@ -23,12 +45,56 @@ h1 {
   border-radius: 20px;
 }
 
-/* This is an example of using something called an HTML ID.
-   The selector here is "#shrek-picture".
-   This means it will look for an HTML element with the attribute id="shrek-picture",
-   and it will apply the style to that. */
-#shrek-picture {
-  /* This is a special way of making an image sit in the center of the page. */
+#welcome-message {
+  display: block;
+  text-align: center  
+}
+
+#character-picture {
   display: block;
   margin: auto;
+  width: 20%;
+  transition: transform 2s;
+  padding-bottom: 20px;
 }
+
+#character-picture:hover {
+  transform: scale(1.1, 1.1);
+  /*transform: rotate(360deg);*/
+}
+
+/*
+#details {
+  border: 2px solid limegreen;
+  border-radius: 10px;
+  color: darkgreen;
+  background-color: honeydew;
+  width: 40%;
+  margin: auto;
+  padding: 20px;
+}
+*/
+
+
+#friend-list {
+  margin-top: -15px;
+}
+
+.property {
+  font-weight: bold;    /** bold, normal, bolder, lighter **/
+  font-size: 100%;
+  font-style: inherit;  /** italic, oblique, normal */
+}
+
+/*
+#fiona {
+  color: yellow; 
+  background-color: blue;
+  border: 3px solid red;
+  border-radius: 5px;
+  padding: 1px;
+  margin: 4px;
+  text-align: center;
+  
+}
+*/
