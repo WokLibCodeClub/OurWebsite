@@ -1,0 +1,34 @@
+/* This is a CSS (Cascading Style Sheet) file */
+
+/* This is what a CSS comment looks like. */
+
+/* A CSS file is filled with CSS rules.
+Each rule has two main parts, (1) the selector (2) the declaration block.
+The selector says what to style, the declaration block says how to style it. 
+*/
+
+/* This is our first rule. The selector in this rule is just "body".
+This says we want to apply the following style within the curly braces { }
+to the whole of the HTML <body> element. */
+body {
+  font-size: 100%;       /* this can be used to change the font size */
+  font-family: "Arial";  /* change the font on the page */
+}
+
+/* The selector here is "h1", this will apply to all <h1> HTML elements. */
+h1 {
+  text-align: center;
+  background-color: green;
+  color: white;
+  border-radius: 20px;
+}
+
+/* This is an example of using something called an HTML ID.
+   The selector here is "#shrek-picture".
+   This means it will look for an HTML element with the attribute id="shrek-picture",
+   and it will apply the style to that. */
+#shrek-picture {
+  /* This is a special way of making an image sit in the center of the page. */
+  display: block;
+  margin: auto;
+}
