@@ -2,28 +2,33 @@
 <html>
   
   <head>
-    <title>Shrek</title>
-    <!-- This link element tells the webpage where to get the stylesheet.
-         The href attribute is the name of the style file.
-         The rel and type attributes will be the same for linking any stylesheet. -->
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Shrek fansite</title>
+    <link rel='stylesheet' type='text/css' href='style.css'>
   </head>
   
   <body>
-    <h1>Shrek</h1>
+    <div id='title-bar'>Shrek fansite</div>
+    <!-- This trinket shows an example of one method for creating a navigation menu.
+         This div element and the ul element within are the navigation menu for the Shrek fansite.
+         The style for navbar is in the style.css file. -->
+    <div>
+      <ul id='navbar' style='display: block'>
+        <li>
+          <a href='shrek.html'>Shrek</a>
+        </li>
+        <li>
+          <a href='donkey.html'>Donkey</a>
+        </li>
+        <li>
+          <a href='fiona.html'>Fiona</a>
+        </li>
+      </ul>
+    </div>
     
-    <img id='shrek-picture' alt='shrek' 
-         src="https://upload.wikimedia.org/wikipedia/en/4/4d/Shrek_%28character%29.png">
-    
-    <p>Full name: Shrek</p>
-    <p>Location: Swamp</p>
-    <p>Occupation: Scaring villagers</p>
-    <p>Friends:</p>
-    <ul>
-      <li>Donkey</li>
-      <li>Fiona</li>
-      <li>Puss in boots</li>
-    </ul>
+    <div id='welcome-message'>
+      <p>This website is made for fans of the shrek films!!!</p>
+      <p>We have pages for each of the characters, have a look around! </p>
+    </div>
   </body>  
   
 </html>
